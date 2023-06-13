@@ -19,7 +19,7 @@ document.querySelector('.check').addEventListener('click', () => {
     } else {
         if (score > 1) {
             displayMessage(guessing > secretNumber ? "📈 Too high!" : "📉 Too low!")
-            score--;
+            score -= 5;
             document.querySelector('.score').textContent = score;
         } else {
             document.querySelector('body').style.backgroundColor = '#ad0000';
