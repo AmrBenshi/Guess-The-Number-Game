@@ -34,6 +34,7 @@ document.querySelector('.again').addEventListener('click', () => {
     score = 20;
     secretNumber = Math.trunc(Math.random() * 20) + 1;
     displayMessage('Start guessing...');
+    document.querySelector('.guessing').removeAttribute('disabled')
     document.querySelector('.score').textContent = score;
     document.querySelector('.number').textContent = '?';
     document.querySelector('.guessing').value = '';
