@@ -11,6 +11,7 @@ document.querySelector('.check').addEventListener('click', () => {
     } else if (guessing == secretNumber) {
         displayMessage("🎉 Correct Number!")
         document.querySelector('.number').textContent = secretNumber;
+        document.querySelector('.guessing').setAttribute('disabled', '')
         document.querySelector('body').style.backgroundColor = '#60b347';
         if (score > highscore) {
             highscore = score;
