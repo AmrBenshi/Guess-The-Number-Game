@@ -48,12 +48,6 @@ header h1,
   left: 50%;
   transform: translate(-50%, 50%);
 }
-@media (min-width: 680px) {
-  header h1,
-  .between {
-    margin: 1em;
-  }
-}
 /* MAIN LAYOUT */
 main {
   height: 50vh;
@@ -107,12 +101,24 @@ main {
 .label-score {
   margin-bottom: 0.5em;
 }
+footer {
+  text-align: center;
+  padding: 1em;
+  font-size: 0.55em;
+}
 @media (min-width: 680px) {
+  header h1,
+  .between {
+    margin: 1em;
+  }
   main {
     font-size: 1.3125em;
   }
   .guessing {
     width: 6.5em;
     height: 3em;
+  }
+  footer {
+    font-size: 1em;
   }
 }

@@ -25,6 +25,7 @@ document.querySelector('.check').addEventListener('click', () => {
         } else {
             document.querySelector('body').style.backgroundColor = '#ad0000';
             displayMessage('You Lose!');
+            document.querySelector('.number').textContent = secretNumber;
             document.querySelector('.score').textContent = 0;
             document.querySelector('.guessing').setAttribute('disabled', '')
         }
